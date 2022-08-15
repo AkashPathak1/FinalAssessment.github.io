@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen&family=Source+Serif+Pro&family=Titillium+Web&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: absolute;
+  background-color: rgb(182, 182, 182);
+  height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+  transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+  padding: 10px;
+}
+
+.sidebar nav li {
+  list-style: none;
+  font-size: 23px;
+  padding: 33px 0;
+}
+
+.sidebar nav li a {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+}
+
+.main {
+  /* background-color: yellow; */
+  width: 90vw;
+}
+
+.container {
+  display: flex;
+}
+
+.infoContainer {
+  /* background-color: green; */
+  width: 80vw;
+  height: 68vh;
+  margin: 45px auto;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Oxygen", sans-serif;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pic img {
+  width: 323px;
+  height: auto;
+  border-radius: 700px;
+  margin-top: 50px;
+}
+
+.greetings {
+  font-size: 2.5em;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Source Serif Pro", serif;
+}
+
+.about {
+  font-size: 2em;
+}
+
+.buttons button {
+  padding: 7px 10px;
+  border-radius: 22px;
+  color: white;
+  background-color: #444444;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 10px 25px 0px 0px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: #444444;
+  background-color: white;
+}
+
+.formHeading {
+  justify-content: center;
+  font-size: 40px;
+  display: flex;
+  margin-top: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.educationContainer {
+  width: 80vw;
+  height: 68vh;
+  margin: 45px auto;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Oxygen", sans-serif;
+}
+
+.aboutContainer {
+  width: 80vw;
+  height: 68vh;
+  margin: 40px 100px;
+  font-family: "Oxygen", sans-serif;
+}
+
+.form {
+  width: 80vw;
+  height: 68vh;
+  margin: 45px auto;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Oxygen", sans-serif;
+}
+
+div form {
+  padding: 1.8rem;
+  max-width: 400px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-gap: 13px;
+  background-color: #d8b7de;
+  border-radius: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Source Serif Pro", serif;
+}
+
+.aboutContainer h2 {
+  font-size: 30px;
+  margin: 8px 0px 8px 7px;
+  font-family: "Source Serif Pro", serif;
+}
+
+.aboutItem {
+  font-size: 17px;
+  padding: 8px;
+}
+
+pre {
+  font-size: 16px;
+  padding: 3px;
+  margin-left: 8px;
+}
+
+.honestyItem {
+  font-size: 17px;
+  font-style: italic;
+  padding: 8px;
+  font-weight: 100;
+}
+
+.date {
+  font-weight: bold;
+  margin-left: 8px;
+  font-family: "Source Serif Pro", serif;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 50px 0px 8px 7px;
+  font-family: "Source Serif Pro", serif;
+  text-align: center;
+}
+
+.educationOrg {
+  font-size: 17px;
+}
+
+.educationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.educationContent {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.educationBox {
+  width: 400px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+  background-color: rgb(236, 225, 225);
+  border-radius: 0.6em;
+  transition: 0.3s;
+}
+
+.educationBox:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.sidebarGo {
+  transform: translate(-443px, 0px);
+  position: absolute;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+
+.ham {
+  margin-top: 5px;
+}
+
+.cross {
+  margin-left: 68px;
+  margin-top: 5px;
+}
+
+@media (max-width: 850px) {
+  .pic {
+    display: none;
+  }
+  .infoContainer {
+    font-size: 10px;
+  }
+}

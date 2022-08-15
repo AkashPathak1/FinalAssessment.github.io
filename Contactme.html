@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash Pathak - Web Designer, Programmer and Enterprenuer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar sidebarGo">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/education.html">Education</a></li>
+            <li><a href="/Contactme.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="hamburger">
+                <img class="ham" src="image/more.png" width="23px" />
+                <img class="cross" src="image/close.png" width="23px" />
+              </div>
+        <h1 class="formHeading">Contact Me for Work/ Queries</h1>
+        <div class="form">
+                <form action="https://httpbin.org/post" method="post" class="contactUs" name="signup" id="form"
+                onsubmit="return checkForm();">
+                <div class="contact">
+
+                    <label for="first-name">
+                        First Name:
+                    </label>
+                    <input type="text" name="first name" id="first-name" placeholder="Enter your first name"required><br><br>
+
+                    <label for="last-name">
+                        Last Name:
+                    </label>
+                    <input type="text" name="last name" id="last-name" placeholder="Enter your last name"required><br><br>
+
+                    <label for= "email">
+                        Email:
+                    </label>
+                    <input type="email" id="email" placeholder="Enter Your Email"required><br><br>
+                    <label for="address">Present Address:</label>
+                    <textarea
+                         name="address"
+                         id="address"
+                         cols="35"
+                         rows="2"
+                         placeholder="Enter your present address"
+                         class="address"
+                         required
+              ></textarea>
+
+              <label for="name">City:</label>
+              <input
+                class="format"
+                type="text"
+                id="city"
+                name="city"
+                list="suggestions"
+                placeholder="Enter your City"
+                required
+              />
+              <datalist id="suggestions">
+                <option label="Barrie" value="Barrie"></option>
+                <option label="Calgary" value="Calgary"></option>
+                <option label="Charlottetown" value="Charlottetown"></option>
+                <option label="Brampton" value="Brampton"></option>
+                <option label="Kitchener" value="Kitchener"></option>
+                <option label="Cold Lake" value="Cold Lake"></option>
+                <option label="Edmonton" value="Edmonton"></option>
+                <option label="Hamilton" value="Hamilton"></option>
+                <option label="Ottawa" value="Ottawa"></option>
+                <option label="Montreal" value="Montreal"></option>
+                <option label="Peterborough" value="Peterborough"></option>
+                <option label="Etobicoke" value="Etobicoke"></option>
+                <option label="Red Deer" value="Red Deer"></option>
+                <option label="Scarborough" value="Scarborough"></option>
+                <option label="St. John" value="St. John"></option>
+                <option label="St. John's" value="St. John's"></option>
+                <option label="Toronto" value="Toronto"></option>
+                <option label="Vancouver" value="Vancouver"></option>
+                <option label="Whitehorse" value="Whitehorse"></option>
+                <option label="Winnipeg" value="Winnipeg"></option>
+                <option label="Yellowknife" value="Yellowknife"></option>
+              </datalist>
+
+              <label for="postalCode">Postal Code:</label>
+              <input
+                name="Postal_Code"
+                type="text"
+                id="postalCode"
+                class="format"
+                placeholder="Postal Code"
+                required
+              />
+              <br />
+              
+                <label for="purpose">What's the purpose of sending this message?</label
+                ><br /><br />
+                <input
+                  type="radio"
+                  id="question"
+                  name="purpose"
+                  value="question"
+                  required
+                />
+                <label for="question">Question!</label><br />
+                <input
+                  type="radio"
+                  id="comment"
+                  name="purpose"
+                  value="comment"
+                  required
+                />
+                <label for="comment">Comment!</label><br />
+                <input
+                  type="radio"
+                  id="hiring"
+                  name="purpose"
+                  value="hiring"
+                  required
+                />
+                <label for="hiring">Hiring!</label>
+                <label for="hourly-rate" class="show-if-active">Preferred Hourly Rate:</label>
+
+                <input
+                  id="hourly-rate"
+                  name="hourlyrate"
+                  class="show-if-active"
+                  type="number"
+                  min="13"
+                  max="30"
+                  maxlength="35"
+                  tabindex="12"
+                />
+              <br />
+              <label for="message">Any Message for Me:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="40"
+                rows="5"
+                placeholder="Please Enter Your Message Here!"
+                class="address"
+                required
+              ></textarea>
+
+                    
+
+                    <label for="profession">What is your field of Profession:</label>
+                    <select name="profession" id="profession" required>
+                        <option value="0">-select-</option>
+                        <option value="Business">Business</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Influencer">Influencer</option>
+                        <option value="Others">Others</option>
+                    </select><br><br>
+
+
+
+
+
+                    <div id="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" onclick="clearSidepanel()" value="Reset">
+                    </div>
+                    <div id="error"></div>
+                </div>
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="/Contactme.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
